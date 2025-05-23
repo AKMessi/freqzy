@@ -3,6 +3,9 @@ import numpy as np
 from scipy.io.wavfile import write
 import tempfile
 
+# ─── Page Config ───────────────────────────────────────────────────────────────
+st.set_page_config(page_title="Freqzy – Binaural Beats", layout="centered")
+
 # ─── Google Analytics ───────────────────────────────────────────────────────────
 GA_CODE = """
 <!-- Google tag (gtag.js) -->
@@ -17,9 +20,6 @@ GA_CODE = """
 """
 
 st.markdown(GA_CODE, unsafe_allow_html=True)
-
-# ─── Page Config ───────────────────────────────────────────────────────────────
-st.set_page_config(page_title="Freqzy – Binaural Beats", layout="centered")
 
 st.markdown("""
     <style>
