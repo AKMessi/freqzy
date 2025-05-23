@@ -3,6 +3,21 @@ import numpy as np
 from scipy.io.wavfile import write
 import tempfile
 
+# ─── Google Analytics ───────────────────────────────────────────────────────────
+GA_CODE = """
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYRE8H5PP7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NYRE8H5PP7');
+</script>
+"""
+
+st.markdown(GA_CODE, unsafe_allow_html=True)
+
 # ─── Page Config ───────────────────────────────────────────────────────────────
 st.set_page_config(page_title="Freqzy – Binaural Beats", layout="centered")
 
